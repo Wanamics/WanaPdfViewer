@@ -1,0 +1,40 @@
+{
+  "id": "1fa75f74-2a50-43e1-bacb-dd0c4253bded",
+  "name": "WanaPdfViewer",
+  "publisher": "Wanamics",
+  "version": "1.0.0.2",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [
+    {
+      "id": "fbdfd8d1-a952-4adb-b0f7-f64c681c649d",
+      "name": "PDF Viewer V2",
+      "publisher": "Volodymyr Dvernytskyi",
+      "version": "1.0.0.0"
+    }
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "24.0.0.0",
+  "idRanges": [
+    {
+      "from": 87171,
+      "to": 87199
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "13.0",
+  "features": [
+    "NoImplicitWith",
+    "TranslationFile"
+  ]
+}
