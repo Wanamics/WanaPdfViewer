@@ -11,4 +11,15 @@ tableextension 87173 "WanaPdf Vendor Bank Account" extends "Vendor Bank Account"
         PDFStorage.SetRange("Source Record ID", RecordId);
         PDFStorage.DeleteAll(true);
     end;
+
+    procedure WanaPdfIsEditable(): Boolean // Avoid Approval Dependency
+    var
+        RecRef: RecordRef;
+        WanApproveDecoupled: Codeunit "WanaPdf WanApprove Decoupled";
+    begin
+        if Code = '' then
+            exit(false);
+        RecRef.GetTable(Rec);
+        exit(WanApproveDecoupled.IsEditable(RecRef));
+    end;
 }

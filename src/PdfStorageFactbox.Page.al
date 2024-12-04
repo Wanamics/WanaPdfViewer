@@ -1,5 +1,5 @@
 namespace Wanamics.PdfViewer;
-page 87171 "WanaPdf PDF Storage Factbox"
+page 87171 "WanaPdf Storage Factbox"
 {
     ApplicationArea = All;
     Caption = 'PDF Documents';
@@ -37,6 +37,7 @@ page 87171 "WanaPdf PDF Storage Factbox"
                 Image = MoveUp;
                 Caption = 'Upload';
                 ToolTip = 'Upload';
+                Enabled = IsEditable;
                 trigger OnAction()
                 var
                     PDFStorage: Record "PDFV2 PDF Storage";
@@ -57,22 +58,30 @@ page 87171 "WanaPdf PDF Storage Factbox"
                 ToolTip = 'Download';
                 trigger OnAction()
                 begin
+                    Rec.TestField("PDF Value");
                     Rec.DownloadContent();
                     CurrPage.Update(true);
                 end;
             }
         }
     }
+    var
+        IsEditable: Boolean;
 
     trigger OnDeleteRecord(): Boolean
+    var
+        ActionDeniedErr: Label 'The status of the entity denies this action.';
     begin
+        if not IsEditable then
+            Error(ActionDeniedErr);
         CurrPage.Update(true);
     end;
 
-    procedure SetFilterOnRecord(pRecordID: RecordId)
+    procedure SetRecord(pRecordID: RecordId; pIsEditable: Boolean)
     begin
         Rec.SetRange("Source Record ID", pRecordID);
         CurrPage.Update();
+        IsEditable := pIsEditable;
     end;
 
     local procedure RunViewer()

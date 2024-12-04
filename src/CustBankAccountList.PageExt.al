@@ -19,7 +19,7 @@ pageextension 87176 "WanaPdf Cust. Bank Acc. List" extends "Customer Bank Accoun
         }
         addlast(factboxes)
         {
-            part(WanaPdfStorageFactbox; "WanaPdf PDF Storage Factbox")
+            part(WanaPdfStorageFactbox; "WanaPdf Storage Factbox")
             {
                 ApplicationArea = All;
             }
@@ -27,7 +27,7 @@ pageextension 87176 "WanaPdf Cust. Bank Acc. List" extends "Customer Bank Accoun
     }
     trigger OnAfterGetCurrRecord()
     begin
-        CurrPage.WanaPdfStorageFactbox.Page.SetFilterOnRecord(Rec.RecordId());
+        CurrPage.WanaPdfStorageFactbox.Page.SetRecord(Rec.RecordId(), true);
     end;
 
     local procedure WanaPdfStorageCount(): Integer

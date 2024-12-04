@@ -8,15 +8,15 @@ pageextension 87177 "WanaPdf Incoming Document" extends "Incoming Document"
     {
         addafter(FinancialInformation)
         {
-            // group(WanaPdfViewer)
-            // {
-            //     ShowCaption = false;
-            //     Editable = false;
-            usercontrol(PdfV2PdfViewer; "PDFV2 PDF Viewer")
+            group(WanaPdfViewer)
             {
-                ApplicationArea = All;
+                ShowCaption = false;
+                Visible = PadAsText <> '';
+                usercontrol(PdfV2PdfViewer; "PDFV2 PDF Viewer")
+                {
+                    ApplicationArea = All;
+                }
             }
-            // }
         }
         addlast(factboxes)
         {
@@ -31,11 +31,11 @@ pageextension 87177 "WanaPdf Incoming Document" extends "Incoming Document"
     }
 
     var
-        PDFAsTxt: Text;
+        PadAsText: Text;
 
     trigger OnAfterGetCurrRecord()
     begin
-        PdfAsTxt := Rec.WanaPdfGetMainAttachmentAsText();
-        CurrPage.PdfV2PdfViewer.LoadPDF(PDFAsTxt, true); //???????????
+        PadAsText := Rec.WanaPdfGetMainAttachmentAsText();
+        CurrPage.PdfV2PdfViewer.LoadPDF(PadAsText, true);
     end;
 }

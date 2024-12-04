@@ -12,19 +12,28 @@ pageextension 87174 "WanaPdf SEPA DD Mandate" extends "SEPA Direct Debit Mandate
                 Caption = 'Pdf Storage Count';
                 ApplicationArea = All;
                 BlankZero = true;
+                Visible = false;
             }
         }
         addlast(factboxes)
         {
-            part(WanaPdfStorageFactbox; "WanaPdf PDF Storage Factbox")
+            part(WanaPdfStorageFactbox; "WanaPdf Storage Factbox")
             {
                 ApplicationArea = All;
+            }
+            part(WanaPdfStorageViewerFactbox; "WanaPdf Storage Viewer Factbox")
+            {
+                ApplicationArea = All;
+                Visible = false;
             }
         }
     }
     trigger OnAfterGetCurrRecord()
+    var
+        PdfStorage: Record "PDFV2 PDF Storage";
     begin
-        CurrPage.WanaPdfStorageFactbox.Page.SetFilterOnRecord(Rec.RecordId());
+        CurrPage.WanaPdfStorageFactbox.Page.SetRecord(Rec.RecordId(), Rec.WanaPdfIsEditable());
+        CurrPage.WanaPdfStorageViewerFactbox.Page.SetRecord(Rec.RecordId());
     end;
 
     local procedure WanaPdfStorageCount(): Integer

@@ -1,13 +1,13 @@
 namespace Wanamics.PdfViewer;
 
-using Microsoft.EServices.EDocument;
-
-page 87172 "WanaPdf Factbox"
+page 87173 "WanaPdf Storage Viewer Factbox"
 {
-    SourceTable = "Incoming Document";
+    SourceTable = "PDFV2 PDF Storage";
     ApplicationArea = All;
+    Caption = 'PDF document';
     PageType = CardPart;
     Editable = false;
+
 
     layout
     {
@@ -30,7 +30,13 @@ page 87172 "WanaPdf Factbox"
 
     trigger OnAfterGetCurrRecord()
     begin
-        PadAsText := Rec.WanaPdfGetMainAttachmentAsText();
+        PadAsText := Rec.WanaPdfGetAsText();
         CurrPage.PdfV2PdfViewer.LoadPDF(PadAsText, true);
+    end;
+
+    procedure SetRecord(pRecordID: RecordId)
+    begin
+        Rec.SetRange("Source Record ID", pRecordID);
+        CurrPage.Update();
     end;
 }

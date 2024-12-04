@@ -6,5 +6,5 @@ permissionset 87171 "WANAPDF_VIEWER"
     Permissions =
         codeunit "WanaPdf Incoming Doc. Attach." = X,
         // codeunit "WanaPdf Incoming Doc. From Zip" = X,
-        page "WanaPdf PDF Storage Factbox" = X;
+        page "WanaPdf Storage Factbox" = X;
 }

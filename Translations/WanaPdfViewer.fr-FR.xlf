@@ -3,41 +3,53 @@
   <file datatype="xml" source-language="en-US" target-language="fr-FR" original="WanaPdfViewer.g.xlf">
     <body>
       <group id="body">
-        <trans-unit id="Page 1267997719 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 602195769 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>PDF Documents</source>
           <target>Documents PDF</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page WanaPdf PDF Storage Factbox - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page WanaPdf Storage Factbox - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1267997719 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 602195769 - Method 3388793719 - NamedType 1252379840" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The status of the entity denies this action.</source>
+          <target>Le statut de l'entité empêche cette action.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page WanaPdf Storage Factbox - Method OnDeleteRecord - NamedType ActionDeniedErr</note>
+        </trans-unit>
+        <trans-unit id="Page 602195769 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Description field</source>
           <target>Spécifie la valeur du champ Description</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page WanaPdf PDF Storage Factbox - Control Description - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page WanaPdf Storage Factbox - Control Description - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 1267997719 - Action 3053757551 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 602195769 - Action 3053757551 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Download</source>
           <target>Télécharger</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page WanaPdf PDF Storage Factbox - Action DownloadContent - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page WanaPdf Storage Factbox - Action DownloadContent - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 1267997719 - Action 3053757551 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 602195769 - Action 3053757551 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Download</source>
           <target>Télécharger</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page WanaPdf PDF Storage Factbox - Action DownloadContent - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page WanaPdf Storage Factbox - Action DownloadContent - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1267997719 - Action 4047584486 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 602195769 - Action 4047584486 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Upload</source>
           <target>Importer</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page WanaPdf PDF Storage Factbox - Action UploadContent - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page WanaPdf Storage Factbox - Action UploadContent - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 1267997719 - Action 4047584486 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 602195769 - Action 4047584486 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Upload</source>
           <target>Importer</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page WanaPdf PDF Storage Factbox - Action UploadContent - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page WanaPdf Storage Factbox - Action UploadContent - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1449327783 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PDF document</source>
+          <target>Document PDF</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page WanaPdf Storage Viewer Factbox - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1997252457 - Control 3553335915 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1658940635">
           <source>Pdf Storage Count</source>
@@ -51,6 +63,12 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension WanaPdf Incoming Document - Control WanaPdfFactbox - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 491691177 - Control 3798495682 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4042331808">
+          <source>Pdf Document</source>
+          <target>Document pdf</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension WanaPdf Purchase Credit Memo - Control WanaPdfFactbox - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 3414173691 - Control 3798495682 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2437096118">
           <source>Pdf Document</source>
           <target>Document pdf</target>
@@ -62,6 +80,24 @@
           <target>Nbre de PDF</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension WanaPdf SEPA DD Mandate - Control WanaPdfStorageCount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2309202582 - Action 2430589988 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 697379313">
+          <source>Upload</source>
+          <target>Importer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension WanaPdf Vendor Bank Acc. Card - Action WanaPdfUpload - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2309202582 - Action 2430589988 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 697379313">
+          <source>Upload</source>
+          <target>Importer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension WanaPdf Vendor Bank Acc. Card - Action WanaPdfUpload - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2309202582 - Action 2430589988 - Method 1377591017 - NamedType 161560794" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 2309202582">
+          <source>Do you want to replace existing %1?</source>
+          <target>Voulez-vous supprimer le %1 existant ?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension WanaPdf Vendor Bank Acc. Card - Action WanaPdfUpload - Method OnAction - NamedType ReplaceLbl</note>
         </trans-unit>
         <trans-unit id="PageExtension 3028218384 - Control 3553335915 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3409829539">
           <source>Pdf Storage Count</source>

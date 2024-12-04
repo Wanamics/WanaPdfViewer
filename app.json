@@ -2,7 +2,7 @@
   "id": "1fa75f74-2a50-43e1-bacb-dd0c4253bded",
   "name": "WanaPdfViewer",
   "publisher": "Wanamics",
-  "version": "1.0.0.2",
+  "version": "1.0.0.5",
   "brief": "",
   "description": "",
   "privacyStatement": "",
@@ -23,7 +23,7 @@
   "application": "24.0.0.0",
   "idRanges": [
     {
-      "from": 87171,
+      "from": 87170,
       "to": 87199
     }
   ],
