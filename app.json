@@ -2,7 +2,7 @@
   "id": "1fa75f74-2a50-43e1-bacb-dd0c4253bded",
   "name": "WanaPdfViewer",
   "publisher": "Wanamics",
-  "version": "1.0.0.5",
+  "version": "1.0.0.6",
   "brief": "",
   "description": "",
   "privacyStatement": "",
@@ -36,5 +36,6 @@
   "features": [
     "NoImplicitWith",
     "TranslationFile"
-  ]
+  ],
+  "contextSensitiveHelpUrl": "https://www.wanamics.fr/extension-wanapdf" 
 }

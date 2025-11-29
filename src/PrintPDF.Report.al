@@ -12,7 +12,7 @@ report 87172 "Print PDF"
 
     dataset
     {
-        dataitem(Integer;Integer)
+        dataitem(Integer; Integer)
         {
             DataItemTableView = where(Number = const(17));
             column(Number; Number) { }
@@ -20,16 +20,17 @@ report 87172 "Print PDF"
     }
     trigger OnPreReport()
     var
-        PrintPDF: Codeunit "Print PDF";
+        PrintPDF: Codeunit "WanaPdf Print PDF";
     begin
         // if UploadIntoStream('', InS) then
-            PrintPDF.PDFToPrint(InS);
+        PrintPDF.PDFToPrint(InS);
     end;
 
     var
         InS: InStream;
-        procedure SetInStream(var pInStream : InStream)
-        begin
-            InS := pInStream;
-        end;
+
+    procedure SetInStream(var pInStream: InStream)
+    begin
+        InS := pInStream;
+    end;
 }

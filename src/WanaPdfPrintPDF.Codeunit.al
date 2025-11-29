@@ -3,7 +3,7 @@ namespace Wanamics.PdfViewer;
 using Microsoft.Foundation.Reporting;
 
 // Credit : https://www.hougaard.com/print-a-pdf-from-business-central-thats-easy-isnt-it/
-codeunit 87171 "Print PDF"
+codeunit 87171 "WanaPdf Print PDF"
 {
     SingleInstance = true;
 
