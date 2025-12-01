@@ -5,7 +5,7 @@ Outre la visualisation d’un pdf incorporé à Business Central (désormais sta
 
 L'extension WanaPdf l'applique aux fonctions ci-après et l'enrichit de quelques fonctionnalités.
 
-![WanaPdfViewer](docs/assets/WanaPdfViewer.png)
+![WanaPdfViewer](images/WanaPdfViewer.png)
 
 ### Sommaire
 
